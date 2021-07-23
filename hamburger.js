@@ -5,10 +5,12 @@ const hamburgerOpen = document.querySelector(".fas.fa-bars");
 const hamburgerClose = document.querySelector(".far.fa-window-close"); 
 
 var timer;
+var mediaQuery = window.matchMedia("(max-width: 800px)");
+var prevHeightInHamburgerRng; 
 
 window.addEventListener("resize", function(event) {
-    clearTimeout(timer);
-    timer = setTimeout(hideOpenAndCloseIcons, 25);
+    console.log(event); 
+    hideOpenAndCloseIcons(); 
 })
 
 hamburgerOpen.addEventListener('click', openHamburger);
@@ -27,22 +29,26 @@ function closeHamburger() {
 }
 
 function hideOpenAndCloseIcons(){
-    if (document.body.clientWidth > 800){
+    if (!mediaQuery.matches){
+        navListWrapper.style.display = 'block'; 
         hamburgerOpen.style.display = 'none'; 
         hamburgerClose.style.display = 'none'; 
     }
-    else if (navListWrapper.style.display = 'block'){
+    else if (hamburgerClose.style.display == 'block'){
+        navListWrapper.style.display = 'block';
         hamburgerOpen.style.display = 'none'; 
         hamburgerClose.style.display = 'block'; 
     }
     else{
+        navListWrapper.style.display = 'none';
         hamburgerOpen.style.display = 'block'; 
         hamburgerClose.style.display = 'none'; 
     }
 }
 
 function setHamburgerMenuOnPageLoad(){
-    if (document.body.clientWidth > 800){
+    if (!mediaQuery.matches){
+        navListWrapper.style.display = 'block'; 
         hamburgerOpen.style.display = 'none'; 
         hamburgerClose.style.display = 'none'; 
     }

@@ -75,6 +75,16 @@ nav{
 
 .fas.fa-bars, .far.fa-window-close{
     display: none;
+    cursor: pointer;
+    color: white; 
+    font-size: 25pt;
+    margin-right: 20px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.fas.fa-bars:hover,.far.fa-window-close:hover{
+    text-shadow: 4px 4px black;
 }
 
 .fas.fa-angle-down{
@@ -401,20 +411,6 @@ footer{
 /* Media Queries */ 
 
 @media (max-width: 800px){
-    .fas.fa-bars, .far.fa-window-close{
-        cursor: pointer;
-        color: white; 
-        font-size: 25pt;
-        margin-right: 20px;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: black;
-    }
-
-    .fas.fa-bars:hover,.far.fa-window-close:hover{
-        text-shadow: 4px 4px black;
-    }
-    
-
     .nav-list-wrapper{
         display: none;
         position: relative; 
