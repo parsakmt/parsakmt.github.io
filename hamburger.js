@@ -5,8 +5,8 @@ const hamburgerClose = document.querySelector(".far.fa-window-close");
 var timer;
 
 window.addEventListener("resize", function(event) {
-    clearTimeout(doit);
-    doit = setTimeout(hideOpenAndCloseIcons, 25);
+    clearTimeout(timer);
+    timer = setTimeout(hideOpenAndCloseIcons, 25);
 })
 
 hamburgerOpen.addEventListener('click', openHamburger);
