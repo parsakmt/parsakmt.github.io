@@ -219,6 +219,7 @@ nav{
 
 .header-socials{
     display: flex;
+    flex-direction: row;
     width: 500px; 
     margin: auto; 
 }
@@ -454,5 +455,9 @@ footer{
         height: 100px; 
         max-width: 150px;
         width: auto;
+    }
+
+    .header-socials{
+        width: 100vw; 
     }
 }
