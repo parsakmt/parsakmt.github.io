@@ -7,6 +7,7 @@ body
     background-color: rgb(255, 255, 255);
     margin: 0; 
     height: 100%; 
+    width: 100%;
     overflow-y: scroll;
     scroll-behavior: smooth;
 }
@@ -433,7 +434,7 @@ footer{
     }
 
     hr.underline{
-        width: 100vw; 
+        width: 90vw; 
     }
 
     .header-container, .about-container, .projects-list{
@@ -454,6 +455,6 @@ footer{
     }
 
     .header-socials{
-        width: 100vw; 
+        width: 90vw; 
     }
 }
