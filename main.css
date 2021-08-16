@@ -407,33 +407,29 @@ footer{
     text-align: center;
 }
 
-
-
 /* Media Queries */ 
 
 @media (max-width: 800px){
+    .fas.fa-bars{
+        display: block; 
+    }
+
     .nav-list-wrapper{
         display: none;
-        position: relative; 
-        height: 8vh;
-        width: 60vw;
-        top: 40px;
-        left: -125px;
+        position: fixed;
+        top: 60px;
+        background-color: gray; 
+        width: 100vw; 
     }
 
     .nav-list{
-        position: absolute; 
         display: flex;
-        flex-direction: row;
-        -ms-flex-align: stretch;
-        height: 8vh;
-        width: 100vw; 
-        padding-top: 30px; 
-        background-color: rgb(53, 53, 53);
+        flex-direction: column;
+        padding-left: 10px;
     }
 
     .nav-item{
-        flex: 1; 
+        padding-top: 5px;
     }
 
     hr.underline{
