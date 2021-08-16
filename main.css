@@ -12,6 +12,13 @@ body
     scroll-behavior: smooth;
 }
 
+h1{
+    font-family:'Impact';
+    font-size: 60pt;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+}
+
 hr.divider{
     margin: 0;
     height: 40px;
@@ -198,13 +205,6 @@ nav{
     flex-direction: column;
 }
 
-.header-description h1 {
-    font-family:'Impact';
-    font-size: 60pt;
-    -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: black;
-}
-
 .header-description h1 span{
     text-shadow: 5px 5px rgb(92, 92, 92);
 }
@@ -251,12 +251,6 @@ nav{
     flex: 1; 
 }
 
-.about-section h1{
-    font-family:'Impact';
-    font-size: 60pt;
-    -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: black;
-}
 
 .about-description{
     background-color: grey;
@@ -286,13 +280,6 @@ nav{
     flex: 1;
     color: white; 
     text-align: center;
-}
-
-.skills-section h1{
-    font-family:'Impact';
-    font-size: 60pt;
-    -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: black;
 }
 
 .skills-section span{
@@ -330,13 +317,6 @@ nav{
     flex: 1;
     color: white; 
     text-align: center;
-}
-
-.projects-section h1{
-    font-family:'Impact';
-    font-size: 60pt;
-    -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: black;
 }
 
 .projects-list{
@@ -433,10 +413,6 @@ footer{
         padding-top: 5px;
     }
 
-    hr.underline{
-        width: 90vw; 
-    }
-
     .header-container, .about-container, .projects-list{
         flex-direction: column;
     }
@@ -457,13 +433,25 @@ footer{
     .header-socials{
         width: 90vw; 
     }
+
+    hr.underline{
+        width: 90vw; 
+    }
 }
 
 @media (max-width: 500px){
+    h1{
+        font-size: 40pt;
+        -webkit-text-stroke-width: 1px;
+    }
     .project-card{
-        max-width: 450px;
+        max-width: 250px;
         padding-left: 10px; 
         padding-right: 10px; 
         margin: 10px auto;
+    }
+
+    .socials{
+        margin: 0; 
     }
 }
