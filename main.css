@@ -458,3 +458,10 @@ footer{
         width: 90vw; 
     }
 }
+
+@media (max-width: 500px){
+    .project-card{
+        max-width: 450px;
+        margin: 10px auto;
+    }
+}
