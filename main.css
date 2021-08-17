@@ -1,7 +1,3 @@
-html{
-    scroll-behavior: smooth;
-}
-
 body
 {
     background-color: rgb(255, 255, 255);
@@ -61,7 +57,7 @@ nav{
 
 .nav-link{
     text-decoration: none;
-    font-size: 1.6rem;
+    font-size: 20pt;
     font-weight: bolder;
     font-family: "Impact";
     color:white;
@@ -71,11 +67,6 @@ nav{
 }
 
 .nav-link:hover{
-    font-family: "Impact";
-    font-weight: bolder;
-    color:white;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
     text-shadow: 4px 4px black;
 }
 
@@ -109,20 +100,12 @@ nav{
     transition: 0.125s;
 }
 
-.fa.fa-envelope-o, .fa-linkedin-square, .fa.fa-github, .fa.fa-instagram{
-    cursor: pointer; 
-    font-size: 20pt;
-}
-
-.fab.fa-github-square{
+.fa.fa-envelope-o, .fa-linkedin-square, .fa.fa-github, .fa.fa-instagram, .fab.fa-github-square{
     cursor: pointer; 
     font-size: 30pt;
-    color: white;
 }
 
 .fab.fa-github-square:hover{
-    cursor: pointer; 
-    font-size: 30pt;
     color: black;
     transition: 0.5s;
 }
@@ -142,15 +125,14 @@ nav{
 
 .image.profile{
     max-width: 70%;
-    height: auto; 
     display: block; 
+    height: auto; 
     margin-left: auto;
     margin-right: auto; 
 }
 
 .image.about-me{
     max-width: 70%;
-    
     height: auto; 
     display: block;
     margin: 0;  
@@ -430,11 +412,7 @@ footer{
         width: auto;
     }
 
-    .header-socials{
-        width: 90vw; 
-    }
-
-    hr.underline{
+    .header-socials, hr.underline{
         width: 90vw; 
     }
 }
