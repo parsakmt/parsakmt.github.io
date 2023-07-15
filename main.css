@@ -1,6 +1,7 @@
 body
 {
-    background-color: rgb(186, 235, 233);
+    background-color: white;
+    padding-top: 70px;
     margin: 0; 
     height: 100%; 
     width: 100%;
@@ -13,47 +14,9 @@ h1{
     font-size: 60pt;
 }
 
-hr.underline{
-    width: 500px; 
-    height: 4px; 
-    background-color: white;
-    border: 0px;
-}
-
-/* NAV STYLES */ 
-nav{
-    position: sticky;
-    z-index: 1;
-    top: 0; 
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: rgba( 10, 97, 100, 0.85 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-}
-
-.nav-list-wrapper{
-    display: block; 
-}
-
-.nav-list{
-    list-style: none;
-}
-
-.nav-item{
-    display: inline-block;
-    margin: 0 10px;  
-    text-transform: uppercase;
-}
-
-.nav-link{
-    text-decoration: none;
-    font-size: 20pt;
-    font-family: 'Trebuchet MS';
-    color:white;
+/* NAV BAR */ 
+.nav-link {
+    font-size: 1.25rem;
 }
 
 /* ICON STYLES */ 
@@ -81,26 +44,14 @@ nav{
 }
 
 .fa.fa-envelope-o, .fa-linkedin-square, .fa.fa-github, .fa.fa-instagram, .fab.fa-github-square{
-    cursor: pointer; 
     font-size: 30pt;
-}
-
-.fab.fa-github-square:hover{
-    color: #0A6164;
-    transition: 0.5s;
 }
 
 /* IMAGE STYLES */ 
 
-.image {
-    padding: 2rem; 
-}
-
 .image.logo{
-    cursor: pointer; 
     max-width: 50px; 
-    height: auto; 
-    padding: 0 25px;  
+    max-height: auto; 
 }
 
 .image.profile{
@@ -151,7 +102,7 @@ nav{
     -ms-flex-align: stretch;
     padding-top: 3%;
     padding-bottom: 3%;
-    background-color: rgb(86, 185, 190);
+    background-color: #7393B3;
 }
 
 .header-image
@@ -168,23 +119,15 @@ nav{
 }
 
 .header-summary{
-    font-family: 'Impact'; 
-    color: rgb(255, 255, 255);
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    margin-top: 30px; 
     font-size: 30pt;
 }
 
 .header-socials{
-    display: flex;
-    flex-direction: row;
     width: 500px; 
     margin: auto; 
 }
 
 .socials{
-    flex: 1;
     margin: 0px 30px; 
 }
 
@@ -194,14 +137,13 @@ nav{
     display: flex;
     flex-direction: row;
     -ms-flex-align: stretch;
-    padding-top: 3%;
+    padding-top: 70px;
     padding-bottom: 3%;
-    background-color: rgb(86, 185, 190);
 }
 
 .about-section{
     flex: 1.5;
-    color: white; 
+    color: #7393B3; 
     text-align: center;
 }
 
@@ -211,8 +153,8 @@ nav{
 
 
 .about-description{
-    background-color: #26978e;
-    border:3px solid #0A6164;
+    background-color: #7393B3;
+    border:3px solid black;
     border-radius: 5px;
     padding: 5px; 
     margin-left: 5%; 
@@ -230,9 +172,9 @@ nav{
 
 .skills-container{
     display: flex;
-    padding-top: 3%;
+    padding-top: 70px;
     padding-bottom: 3%;
-    background-color: rgb(86, 185, 190);
+    background-color: #7393B3;
 }
 
 .skills-section{
@@ -254,7 +196,7 @@ nav{
     flex-wrap: wrap;
 
     border-radius: 20px;
-    border: 2px solid #0A6164;
+    border: 2px solid black;
 
     color: gray;
     background-color: white;
@@ -265,14 +207,13 @@ nav{
 
 .projects-container{
     display: flex;
-    padding-top: 0%;
+    padding-top: 70px;
     padding-bottom: 3%;
-    background-color: rgb(86, 185, 190);
 }
 
 .projects-section{
     flex: 1;
-    color: white; 
+    color: #7393B3; 
     text-align: center;
 }
 
@@ -284,18 +225,19 @@ nav{
 }
 
 .project-card{
+    color: white;
     position: relative;
     display: flex;
     flex-direction: column;
     flex: 1;
-    background-color: #26978e;
+    background-color: #7393B3;
     max-height: 600px;
     padding-bottom: 32pt; 
     margin: 0 10px; 
     border-radius: 10px;
-    border: 2px solid #0A6164;
-    -webkit-box-shadow: 2px 2px 2px 0px #0A6164;
-    box-shadow: 2px 2px 2px 0px #0A6164;
+    border: 2px solid black;
+    -webkit-box-shadow: 2px 2px 2px 0px black;
+    box-shadow: 2px 2px 2px 0px black;
 }
 
 .project-card h2{
@@ -319,7 +261,7 @@ nav{
 
 .project-devpost-button{
     background-color: white;
-    color: #26978e;
+    color: #7393B3;
     font-size: 20pt;
     font-family: 'fantasy', 'monospace', 'Franklin Gothic Medium';
     text-align: center; 
@@ -328,18 +270,10 @@ nav{
     cursor: pointer;
     margin-right: 10px; 
 }
-
-.project-devpost-button:hover{
-    background-color: #0A6164;
-    color: white;
-    border-color: white; 
-    transition: .5s;
-}
-
 /* Footer Styles */
 
 footer{
-    color:  #26978e;
+    color:  #7393B3;
     font-family: sans-serif;
     font-size: 14pt;
     text-align: center;
